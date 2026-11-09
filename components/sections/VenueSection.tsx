@@ -6,7 +6,7 @@ import { MapPin, Navigation, Car, Home, ExternalLink } from "lucide-react";
 export function VenueSection() {
   // Addresses / Plus Codes (No raw coordinates)
   const groomAddress = "QH57+3G8 Wirbhanpur, Uttar Pradesh";
-  const brideAddress = "MQ6F+3VQ, Rajepur, Baharipur, Uttar Pradesh 222180";
+  const brideAddress = "XFV8+VM5, Kanakpur, Uttar Pradesh 222125";
 
   // Google Maps individual search URLs
   const groomMapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
@@ -112,7 +112,7 @@ export function VenueSection() {
             className="inline-flex items-center gap-2 px-6 py-3 bg-[#881337] text-[#ffffff] hover:bg-[#700f2d] transition-colors rounded-[4px] text-xs sm:text-sm font-medium cursor-pointer shadow-sm border border-[#9f1239]"
           >
             <Navigation className="w-4 h-4 text-[#fbbf24]" />
-            <span>गूगल मैप्स पर बारात मार्ग देखें (वीरभानपुर ➔ बहरीपुर)</span>
+            <span>गूगल मैप्स पर बारात मार्ग देखें (वीरभानपुर ➔ अनुसार)</span>
           </a>
           <p className="text-[11px] text-[#92400e] mt-2 font-medium">
             निवास स्थान (वीरभानपुर) से विवाह स्थल (अनुसार, बहरीपुर) के बीच का सीधा रास्ता
