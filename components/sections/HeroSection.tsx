@@ -1,9 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   Ganesh,
-  CoupleAvatar,
   Mandala,
   OrnateCorner,
   Swastik,
@@ -89,14 +89,24 @@ export function HeroSection() {
           <div className="w-12 h-1 bg-[#c28b14] mx-auto rounded-full mb-3" />
         </motion.div>
 
-        {/* Animated Couple Avatar */}
+        {/* Couple Photo */}
         <motion.div
-          animate={{ y: [0, -5, 0] }}
-          transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
           className="my-3 flex justify-center"
         >
-          <div className="p-2 rounded-full bg-[#fdf8f0] border border-[#eedac2]">
-            <CoupleAvatar className="w-40 h-32 sm:w-48 sm:h-36 text-[#7f1d1d]" />
+          <div className="relative p-1.5 rounded-full bg-gradient-to-tr from-[#c28b14] via-[#f7e7ce] to-[#b37a12] shadow-md ring-4 ring-[#eedac2]/40">
+            <div className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full overflow-hidden border-2 border-[#fffdfa] shadow-inner bg-[#fdf8f0]">
+              <Image
+                src="/1000177788.jpeg"
+                alt="राजकुमार और अंशिका"
+                fill
+                sizes="(max-width: 640px) 144px, 176px"
+                className="object-cover object-top"
+                priority
+              />
+            </div>
           </div>
         </motion.div>
 
