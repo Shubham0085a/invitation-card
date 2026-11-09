@@ -146,7 +146,7 @@ export function InvitationSection() {
                 <span className="font-semibold text-[#7f1d1d]">सुपौत्री:</span> श्री कुंवरचन्द्र यादव
               </p>
               <p className="text-[#92400e] pt-1">
-                निवास: ग्राम- अनुसार, पो०- बहरीपुर (राजेपुर), जिला- जौनपुर - 222180
+                निवास: ग्राम- अनुसार, पो०- बहरीपुर, जिला- जौनपुर
               </p>
             </div>
           </div>
