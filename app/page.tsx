@@ -10,7 +10,7 @@ import { AudioPlayer } from "@/components/AudioPlayer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen w-full bg-[#ffffff] text-[#161513] selection:bg-[#f0cc71]/30 selection:text-[#161513]">
+    <main className="min-h-screen w-full bg-[#fffbf5] text-[#2a1208] selection:bg-[#fbbf24]/30 selection:text-[#7f1d1d]">
       {/* Background Shehnai / Music toggle */}
       <AudioPlayer />
 

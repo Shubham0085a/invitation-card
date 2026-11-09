@@ -5,9 +5,11 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Design system based on DESIGN.md — Oracle-inspired warm neutrals.
- * Oracle Sans → Inter (open substitute with 350/800 weight axis).
- * Georgia ships on every OS; no substitution needed.
+ * Auspicious Indian Wedding Color Palette
+ * Rich royal crimson maroon (#881337, #7f1d1d),
+ * Kesar & Haldi gold (#c28b14, #fbbf24),
+ * Warm raw-silk ivory (#fffbf5, #fbf5eb, #fdf8f0),
+ * Emerald & Auspicious accents.
  */
 
 @theme inline {
@@ -30,39 +32,26 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-sidebar-ring: var(--sidebar-ring);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar: var(--sidebar);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
 
-  /* ---- Design-system brand & surface palette ---- */
-  --color-brand-mark: #c74634;
-  --color-accent-gold: #f0cc71;
-  --color-accent-gold-soft: #f7e0a1;
-  --color-canvas: #ffffff;
-  --color-canvas-soft: #fbf9f8;
-  --color-canvas-tint: #f5f4f2;
-  --color-canvas-warm: #f1efed;
-  --color-hairline: #e4e1dd;
-  --color-divider: #e9e7e4;
-  --color-field-border: #d4cfca;
-  --color-ink-deep: #211e1c;
-  --color-ink: #161513;
-  --color-link: #006b8f;
-  --color-focus: #227e9e;
-  --color-error: #d63b25;
-  --color-disabled-ink: #aea8a2;
-  --color-band-teal: #d6e5e5;
-  --color-band-forest: #33553c;
+  /* ---- Design-system festive wedding palette ---- */
+  --color-brand-mark: #991b1b;
+  --color-accent-gold: #c28b14;
+  --color-accent-gold-soft: #fbbf24;
+  --color-canvas: #fffbf5;
+  --color-canvas-soft: #fdf8f0;
+  --color-canvas-tint: #f9f0e2;
+  --color-canvas-warm: #fbf5eb;
+  --color-hairline: #e8d5be;
+  --color-divider: #e2cdb4;
+  --color-field-border: #d9be9e;
+  --color-ink-deep: #3b0712;
+  --color-ink: #2a1208;
+  --color-link: #991b1b;
+  --color-focus: #c28b14;
+  --color-error: #991b1b;
+  --color-disabled-ink: #a8947f;
+  --color-band-teal: #e6f4f1;
+  --color-band-forest: #1e3a2f;
   --color-on-primary: #ffffff;
 
   /* ---- Fonts ---- */
@@ -71,7 +60,7 @@
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   --font-heading: 'Nirmala UI', 'Mangal', 'Noto Sans Devanagari', sans-serif;
 
-  /* ---- Border radius (from DESIGN.md) ---- */
+  /* ---- Border radius ---- */
   --radius-xs: 4px;
   --radius-sm: 6px;
   --radius-md: 8px;
@@ -81,46 +70,35 @@
   --radius-3xl: 15px;
   --radius-4xl: 15px;
   --radius-full: 9999px;
-
 }
 
 :root {
-  /* ---- Shadcn semantic tokens mapped to DESIGN.md ---- */
-  --background: #ffffff;            /* canvas */
-  --foreground: #161513;            /* ink */
-  --card: #ffffff;                  /* canvas */
-  --card-foreground: #161513;       /* ink */
-  --popover: #ffffff;               /* canvas */
-  --popover-foreground: #161513;    /* ink */
-  --primary: #312d2a;              /* action charcoal */
-  --primary-foreground: #ffffff;   /* on-primary */
-  --secondary: #f5f4f2;            /* canvas-tint */
-  --secondary-foreground: #161513; /* ink */
-  --muted: #f1efed;                /* canvas-warm */
-  --muted-foreground: #aea8a2;     /* disabled-ink */
-  --accent: #f0cc71;               /* accent-gold */
-  --accent-foreground: #161513;    /* ink */
-  --destructive: #d63b25;          /* error */
-  --border: #e4e1dd;               /* hairline */
-  --input: #d4cfca;                /* field-border */
-  --ring: #227e9e;                 /* focus */
-  --chart-1: #c74634;
-  --chart-2: #006b8f;
-  --chart-3: #33553c;
-  --chart-4: #f0cc71;
-  --chart-5: #d6e5e5;
+  /* Festive Indian Wedding Theme Tokens */
+  --background: #fffbf5;            /* warm raw-silk ivory */
+  --foreground: #2a1208;            /* warm deep espresso */
+  --card: #ffffff;                  /* card surface */
+  --card-foreground: #2a1208;
+  --popover: #ffffff;
+  --popover-foreground: #2a1208;
+  --primary: #881337;              /* royal crimson maroon */
+  --primary-foreground: #ffffff;
+  --secondary: #fdf8f0;            /* soft chandan cream */
+  --secondary-foreground: #7f1d1d;
+  --muted: #fbf5eb;                /* warm kesar tint */
+  --muted-foreground: #92400e;
+  --accent: #c28b14;               /* royal wedding gold */
+  --accent-foreground: #ffffff;
+  --destructive: #991b1b;
+  --border: #e8d5be;               /* gold-tinted hairline */
+  --input: #d9be9e;
+  --ring: #c28b14;
+  --chart-1: #991b1b;
+  --chart-2: #c28b14;
+  --chart-3: #1e3a2f;
+  --chart-4: #fbbf24;
+  --chart-5: #fdf8f0;
   --radius: 8px;
-  --sidebar: #fbf9f8;              /* canvas-soft */
-  --sidebar-foreground: #161513;   /* ink */
-  --sidebar-primary: #312d2a;      /* action charcoal */
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #f1efed;       /* canvas-warm */
-  --sidebar-accent-foreground: #161513;
-  --sidebar-border: #e4e1dd;       /* hairline */
-  --sidebar-ring: #227e9e;         /* focus */
 }
-
-/* No dark mode — the DESIGN.md system is light-only with inverted polarity on dark bands */
 
 @layer base {
   * {

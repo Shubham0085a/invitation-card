@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Bells, Diya, Swastik } from "@/components/doodles";
+import { Bells, Swastik } from "@/components/doodles";
 import { Calendar, Clock, Sparkles } from "lucide-react";
 
 export function EventsSection() {
@@ -55,7 +55,7 @@ export function EventsSection() {
   ];
 
   return (
-    <section className="py-16 px-4 sm:px-6 bg-[#fbf9f8] border-y border-[#e4e1dd] relative">
+    <section className="py-16 px-4 sm:px-6 bg-[#fbf5eb] border-y border-[#e8d5be] relative">
       <div className="max-w-3xl mx-auto">
         {/* Title */}
         <motion.div
@@ -66,21 +66,21 @@ export function EventsSection() {
           className="text-center mb-12 space-y-2"
         >
           <div className="flex justify-center items-center gap-2 mb-1">
-            <Bells className="w-6 h-6 text-[#312d2a]" />
-            <Swastik className="w-5 h-5 text-[#c74634]" />
-            <Bells className="w-6 h-6 text-[#312d2a] transform -scale-x-100" />
+            <Bells className="w-6 h-6 text-[#c28b14]" />
+            <Swastik className="w-5 h-5 text-[#991b1b]" />
+            <Bells className="w-6 h-6 text-[#c28b14] transform -scale-x-100" />
           </div>
-          <h2 className="text-3xl sm:text-4xl font-serif text-[#161513] font-normal">
+          <h2 className="text-3xl sm:text-4xl font-serif text-[#7f1d1d] font-normal">
             वैवाहिक कार्यक्रम
           </h2>
-          <p className="text-xs sm:text-sm text-[#312d2a]/70">
+          <p className="text-xs sm:text-sm text-[#92400e]">
             पावन मांगलिक अवसरों की समयावली
           </p>
-          <div className="w-12 h-0.5 bg-[#f0cc71] mx-auto mt-2" />
+          <div className="w-12 h-0.5 bg-[#c28b14] mx-auto mt-2" />
         </motion.div>
 
         {/* Vertical Timeline */}
-        <div className="relative pl-6 sm:pl-8 border-l border-[#e4e1dd] space-y-8 sm:space-y-10 my-8">
+        <div className="relative pl-6 sm:pl-8 border-l border-[#e8d5be] space-y-8 sm:space-y-10 my-8">
           {events.map((evt, idx) => (
             <motion.div
               key={evt.id}
@@ -94,8 +94,8 @@ export function EventsSection() {
               <div
                 className={`absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full border-2 ${
                   evt.highlight
-                    ? "bg-[#c74634] border-[#ffffff] ring-4 ring-[#c74634]/20"
-                    : "bg-[#ffffff] border-[#312d2a]"
+                    ? "bg-[#991b1b] border-[#ffffff] ring-4 ring-[#991b1b]/25"
+                    : "bg-[#ffffff] border-[#c28b14]"
                 }`}
               />
 
@@ -103,38 +103,38 @@ export function EventsSection() {
               <div
                 className={`p-5 rounded-[8px] border transition-all ${
                   evt.highlight
-                    ? "bg-[#ffffff] border-[#c74634]/40 ring-1 ring-[#c74634]/20"
-                    : "bg-[#ffffff] border-[#e4e1dd] hover:border-[#d4cfca]"
+                    ? "bg-[#fff8f6] border-[#991b1b]/40 ring-1 ring-[#991b1b]/20 shadow-sm"
+                    : "bg-[#fffdfa] border-[#e8d5be] hover:border-[#d9be9e]"
                 }`}
               >
                 <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
                   <span
                     className={`text-[11px] font-medium px-2 py-0.5 rounded-[4px] ${
                       evt.highlight
-                        ? "bg-[#c74634] text-[#ffffff]"
-                        : "bg-[#f1efed] text-[#312d2a]"
+                        ? "bg-[#991b1b] text-[#ffffff]"
+                        : "bg-[#fdf2e4] text-[#92400e]"
                     }`}
                   >
                     {evt.badge}
                   </span>
-                  <div className="flex items-center gap-2 text-xs text-[#312d2a]/80 font-medium">
-                    <Calendar className="w-3.5 h-3.5 text-[#c74634]" />
+                  <div className="flex items-center gap-2 text-xs text-[#7f1d1d] font-semibold">
+                    <Calendar className="w-3.5 h-3.5 text-[#991b1b]" />
                     <span>
                       {evt.date} ({evt.day})
                     </span>
                   </div>
                 </div>
 
-                <h3 className="text-lg sm:text-xl font-serif font-bold text-[#161513] mb-1">
+                <h3 className="text-lg sm:text-xl font-serif font-bold text-[#7f1d1d] mb-1">
                   {evt.title}
                 </h3>
 
-                <p className="text-xs sm:text-sm text-[#312d2a]/80 mb-2">
+                <p className="text-xs sm:text-sm text-[#78350f] mb-2 leading-relaxed">
                   {evt.desc}
                 </p>
 
-                <div className="flex items-center gap-1.5 text-xs text-[#312d2a]/70 border-t border-[#e4e1dd] pt-2">
-                  <Clock className="w-3.5 h-3.5 text-[#312d2a]/60" />
+                <div className="flex items-center gap-1.5 text-xs text-[#92400e] border-t border-[#e8d5be] pt-2 font-medium">
+                  <Clock className="w-3.5 h-3.5 text-[#c28b14]" />
                   <span>{evt.time}</span>
                 </div>
               </div>
@@ -148,15 +148,15 @@ export function EventsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
-          className="mt-10 p-5 bg-[#ffffff] border-l-4 border-[#c74634] border border-[#e4e1dd] rounded-[6px]"
+          className="mt-10 p-5 bg-[#fff8f6] border-l-4 border-[#991b1b] border border-[#e8d5be] rounded-[6px] shadow-sm"
         >
           <div className="flex items-start gap-3">
-            <Sparkles className="w-5 h-5 text-[#c74634] shrink-0 mt-0.5" />
+            <Sparkles className="w-5 h-5 text-[#991b1b] shrink-0 mt-0.5" />
             <div>
-              <h4 className="text-sm font-bold text-[#161513] mb-1">
+              <h4 className="text-sm font-bold text-[#7f1d1d] mb-1">
                 विशेष सूचना (बारात प्रस्थान)
               </h4>
-              <p className="text-xs sm:text-sm text-[#312d2a] leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#78350f] leading-relaxed">
                 बारात हमारे निवास स्थान <strong>ग्राम व पोस्ट- वीरभानपुर, जौनपुर</strong> से{" "}
                 <strong>सायं 3:00 बजे</strong> से अनुसार, बहरीपुर, जौनपुर के लिए प्रस्थान करेगी।
               </p>
@@ -165,9 +165,9 @@ export function EventsSection() {
         </motion.div>
 
         {/* Affiliated Business Note from Original Card */}
-        <div className="mt-8 text-center p-3 border border-dashed border-[#e4e1dd] rounded-[4px] max-w-sm mx-auto">
-          <p className="text-[11px] text-[#312d2a]/70">सम्बन्धित फर्म</p>
-          <p className="text-xs font-semibold text-[#161513]">
+        <div className="mt-8 text-center p-3 border border-dashed border-[#e8d5be] bg-[#fffdfa] rounded-[4px] max-w-sm mx-auto">
+          <p className="text-[11px] text-[#92400e] font-medium">सम्बन्धित फर्म</p>
+          <p className="text-xs font-bold text-[#7f1d1d]">
             शंकर पैथोलॉजी, नौपेड़वाँ, जौनपुर
           </p>
         </div>
@@ -175,4 +175,3 @@ export function EventsSection() {
     </section>
   );
 }
-

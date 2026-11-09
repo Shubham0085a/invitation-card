@@ -16,31 +16,30 @@ What gives the system its character is the type. Two display registers run side 
 - A 40 × 4px `{colors.accent-gold}` rule under the hero headline as the system's only ornament
 - Chromatic colour deployed only at whole-band scale, never on a control
 
-## Colors
+## Colors (Auspicious Festive Wedding Palette)
 
 ### Brand & Accent
-- **Oracle Red** (`{colors.brand-mark}` — #c74634): the wordmark, and only the wordmark. It appears in the masthead at the top of every page and is not used for any button, link, border, band or highlight. Elsewhere on the page red shows up only inside photography and inside logos printed on product hardware.
-- **Action Charcoal** (`{colors.primary}` — #312d2a): the fill behind every primary action on the site. Warm rather than neutral, and a clear step lighter than `{colors.ink}` so a filled button reads as an object rather than as a block of text.
-- **Action Charcoal Pressed** (`{colors.primary-pressed}` — #47423e): the active state of that button.
-- **On Primary** (`{colors.on-primary}` — #ffffff): the label on a filled action, and the text colour on every inverted surface.
-- **Gold Rule** (`{colors.accent-gold}` — #f0cc71): a 40 × 4px bar sitting under the hero headline on every product page. The system's one piece of ornament.
-- **Gold Tab** (`{colors.accent-gold-soft}` — #f7e0a1): a paler gold, 5px tall, marking the selected item in the dark product sub-navigation.
+- **Sindoor / Kumkum Crimson** (`{colors.brand-mark}` — #991b1b): Auspicious deep crimson red for Ganesh motifs, sacred titles, and key wedding highlights.
+- **Royal Wedding Maroon** (`{colors.primary}` — #881337): The primary action button fill and key celebratory headings.
+- **Royal Maroon Pressed** (`{colors.primary-pressed}` — #700f2d): Active / hover state of primary buttons.
+- **On Primary** (`{colors.on-primary}` — #ffffff): Text on primary buttons and badges.
+- **Kesar Gold** (`{colors.accent-gold}` — #c28b14): Royal wedding gold foil for decorative rules, ornate corners, and dividers.
+- **Radiant Haldi Gold** (`{colors.accent-gold-soft}` — #fbbf24): Lighter glowing gold for icons and active indicators.
 
-### Surface
-The surface set is a numbered ladder, and its rungs are close enough together that a band change reads as a shift in light rather than as a new panel.
-
-- **Canvas** (`{colors.canvas}` — #ffffff): the masthead, the footer, content cards, and the brightest section bands.
-- **Canvas Soft** (`{colors.canvas-soft}` — #fbf9f8): the most common product-page section fill. One barely-perceptible step off white.
-- **Canvas Tint** (`{colors.canvas-tint}` — #f5f4f2): the next step, used for supporting sections and the contact hero.
-- **Canvas Warm** (`{colors.canvas-warm}` — #f1efed): the warmest and most-used tint, carrying the corporate index page almost end to end and every product hero band.
-- **Hairline** (`{colors.hairline}` — #e4e1dd): the tile and disabled-control border, and the last neutral rung before the dark end.
-- **Divider** (`{colors.divider}` — #e9e7e4): the 2px vertical rule that separates the contact page's channel columns.
-- **Field Border** (`{colors.field-border}` — #d4cfca): the 1px border around the masthead search field, one clear step darker than `{colors.hairline}` so an input reads as interactive against a card that merely reads as a container.
-- **Ink Deep** (`{colors.ink-deep}` — #211e1c): the dark end of the ladder, used as a full-width band behind the product sub-navigation.
+### Surface (Warm Silk & Ivory)
+- **Canvas (Raw Silk Ivory)** (`{colors.canvas}` — #fffbf5): Main pure ivory canvas ground.
+- **Canvas Soft (Chandan Cream)** (`{colors.canvas-soft}` — #fdf8f0): Card surfaces and soft content sections.
+- **Canvas Tint (Kesar Tint)** (`{colors.canvas-tint}` — #f9f0e2): Warm supporting sections.
+- **Canvas Warm (Festive Parchment)** (`{colors.canvas-warm}` — #fbf5eb): Hero section and warm wedding background.
+- **Hairline (Gold-Tinted Border)** (`{colors.hairline}` — #e8d5be): Delicate gold-tinted hairline borders for cards and dividers.
+- **Divider** (`{colors.divider}` — #e2cdb4): Subtle warm dividing rule.
+- **Field Border** (`{colors.field-border}` — #d9be9e): Form inputs and card edges.
+- **Ink Deep (Velvet Royal Maroon)** (`{colors.ink-deep}` — #3b0712): Deep festive maroon velvet ground for the footer.
 
 ### Text
-- **Ink** (`{colors.ink}` — #161513): every heading and every line of body copy. A warm near-black, never pure black, which keeps the very light 300-weight display sizes from looking harsh.
-- **Link** (`{colors.link}` — #006b8f): inline links in body copy and channel columns. A deep teal-blue, set without an underline, at the same size and weight as the text around it — the colour alone carries the affordance.
+- **Deep Espresso Ink** (`{colors.ink}` — #7f1d1d / #2a1208): Royal maroon for major headings, warm espresso for body.
+- **Auspicious Amber** (`{colors.amber-ink}` — #92400e / #78350f): Warm kesar amber for labels, timestamps, and details.
+- **Link** (`{colors.link}` — #991b1b): Deep festive crimson links.
 - On dark bands, text inverts to `{colors.on-primary}` and there is no intermediate tone; the system has one text colour per polarity.
 
 ### Semantic

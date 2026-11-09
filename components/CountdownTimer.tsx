@@ -43,7 +43,7 @@ export function CountdownTimer() {
 
   return (
     <div className="w-full max-w-sm mx-auto my-3 px-1">
-      <div className="text-center text-[11px] sm:text-xs tracking-wider text-[#312d2a]/70 font-medium mb-2">
+      <div className="text-center text-[11px] sm:text-xs tracking-wider text-[#92400e] font-medium mb-2">
         शुभ विवाह के पावन क्षण की प्रतीक्षा
       </div>
       <div className="grid grid-cols-4 gap-1.5 sm:gap-2.5">
@@ -53,12 +53,12 @@ export function CountdownTimer() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.1, duration: 0.5 }}
-            className="flex flex-col items-center justify-center p-2 sm:p-2.5 bg-[#fbf9f8] border border-[#e4e1dd] rounded-[4px]"
+            className="flex flex-col items-center justify-center p-2 sm:p-2.5 bg-[#fdf8f0] border border-[#e8d5be] rounded-[4px]"
           >
-            <span suppressHydrationWarning className="text-base sm:text-xl font-serif font-bold text-[#161513]">
+            <span suppressHydrationWarning className="text-base sm:text-xl font-serif font-bold text-[#7f1d1d]">
               {String(item.value).padStart(2, "0")}
             </span>
-            <span className="text-[10px] sm:text-[11px] text-[#312d2a]/70 mt-0.5">
+            <span className="text-[10px] sm:text-[11px] text-[#92400e] mt-0.5 font-medium">
               {item.label}
             </span>
           </motion.div>
