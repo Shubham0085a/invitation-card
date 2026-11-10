@@ -16,7 +16,7 @@ export function FamilySection() {
           text: "राजकुमार एवं अंशिका के शुभ विवाह में आप सादर आमंत्रित हैं।",
           url: window.location.href,
         })
-        .catch(() => {});
+        .catch(() => { });
     } else {
       window.open(`https://api.whatsapp.com/send?text=${text}`, "_blank");
     }
@@ -61,7 +61,7 @@ export function FamilySection() {
               </h3>
               <div className="space-y-1 font-serif text-lg sm:text-xl text-[#7f1d1d] font-bold">
                 <p>राजेश कुमार यादव</p>
-                <p>रामाशंकर यादव</p>
+                <p>रमाशंकर यादव</p>
               </div>
               <div className="text-xs text-[#78350f] mt-4 pt-3 border-t border-[#e8d5be] space-y-1">
                 <p>ग्राम व पो०- वीरभानपुर</p>

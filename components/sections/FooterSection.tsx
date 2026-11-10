@@ -41,8 +41,12 @@ export function FooterSection() {
           <p className="text-[#fef3c7]/70">
             ग्राम व पो०- वीरभानपुर, जिला- जौनपुर (उ०प्र०)
           </p>
-          <div className="pt-2 flex justify-center items-center gap-1.5 text-[#fbbf24]">
+          <div className="pt-2 flex flex-wrap justify-center items-center gap-1.5 text-[#fbbf24]">
             <Phone className="w-3.5 h-3.5" />
+            <a href="tel:7905444914" className="hover:underline font-semibold">
+              7905444914
+            </a>
+            <span className="text-[#fef3c7]/60">,</span>
             <a href="tel:9935326130" className="hover:underline font-semibold">
               9935326130
             </a>
