@@ -13,13 +13,19 @@ interface Track {
 const tracks: Track[] = [
   {
     id: "track-1",
-    name: "मधुर संगीत (धुन १)",
+    name: "मिलन धुन (धुन 1)",
+    subtitle: "मिलन धुन",
+    src: "/lagan-bitane-se-phle.mpeg",
+  },
+  {
+    id: "track-2",
+    name: "मधुर संगीत (धुन 2)",
     subtitle: "विवाह धुन",
     src: "/absolutesound-violin-emotional-557859.mp3",
   },
   {
-    id: "track-2",
-    name: "भावुक वायलिन (धुन २)",
+    id: "track-3",
+    name: "भावुक वायलिन (धुन 3)",
     subtitle: "मधुर धुन",
     src: "/absolutesound-violin-violin-music-557858.mp3",
   },

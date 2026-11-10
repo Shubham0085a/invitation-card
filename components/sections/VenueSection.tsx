@@ -6,7 +6,7 @@ import { MapPin, Navigation, Car, Home, ExternalLink } from "lucide-react";
 export function VenueSection() {
   // Addresses / Plus Codes (No raw coordinates)
   const groomAddress = "QH57+3G8 Wirbhanpur, Uttar Pradesh";
-  const brideAddress = "XFV8+VM5, Kanakpur, Uttar Pradesh 222125";
+  const brideAddress = "XFX8+9VQ Kanakpur, Uttar Pradesh 222125";
 
   // Google Maps individual search URLs
   const groomMapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
