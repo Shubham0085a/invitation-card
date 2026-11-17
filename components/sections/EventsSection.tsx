@@ -20,7 +20,7 @@ export function EventsSection() {
       title: "समापन, हवन व प्रीतिभोज",
       date: "23 नवम्बर 2026",
       day: "सोमवार",
-      time: "दोपहर 12:00 बजे से",
+      time: "दोपहर 12:00 बजे से - रात्रि काल 08:00 बजे तक",
       desc: "रामायण पाठ की पूर्णाहूति, पवित्र हवन एवं स्नेहयुक्त प्रीतिभोज",
       badge: "महाप्रसाद",
     },
@@ -92,28 +92,25 @@ export function EventsSection() {
             >
               {/* Timeline marker */}
               <div
-                className={`absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full border-2 ${
-                  evt.highlight
+                className={`absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full border-2 ${evt.highlight
                     ? "bg-[#991b1b] border-[#ffffff] ring-4 ring-[#991b1b]/25"
                     : "bg-[#ffffff] border-[#c28b14]"
-                }`}
+                  }`}
               />
 
               {/* Event Card */}
               <div
-                className={`p-5 rounded-[8px] border transition-all ${
-                  evt.highlight
+                className={`p-5 rounded-[8px] border transition-all ${evt.highlight
                     ? "bg-[#fff8f6] border-[#991b1b]/40 ring-1 ring-[#991b1b]/20 shadow-sm"
                     : "bg-[#fffdfa] border-[#e8d5be] hover:border-[#d9be9e]"
-                }`}
+                  }`}
               >
                 <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
                   <span
-                    className={`text-[11px] font-medium px-2 py-0.5 rounded-[4px] ${
-                      evt.highlight
+                    className={`text-[11px] font-medium px-2 py-0.5 rounded-[4px] ${evt.highlight
                         ? "bg-[#991b1b] text-[#ffffff]"
                         : "bg-[#fdf2e4] text-[#92400e]"
-                    }`}
+                      }`}
                   >
                     {evt.badge}
                   </span>
